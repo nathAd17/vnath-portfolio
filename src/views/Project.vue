@@ -19,7 +19,7 @@
             <!-- akhir judul halaman -->
             <!-- content -->
             <div
-                class="mb-4 flex items-center justify-center font-inter gap-3 text-sm md:text-lg font-medium md:font-semibold">
+                class="mb-4 flex items-center justify-center font-inter md:gap-3 gap-1 text-sm md:text-lg font-medium md:font-semibold">
                 <button v-for="tab in tabs" :key="tab" @click="activeTab = tab" :class="{
                     'animate-pulse bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 border border-blue-600 dark:border-cyan-200': activeTab === tab,
                     'bg-gray-200 text-gray-800': activeTab !== tab}" class="md:px-4 px-2 py-2 rounded-lg mr-2">
