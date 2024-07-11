@@ -26,7 +26,7 @@
                     {{ tab }}
                 </button>
             </div>
-            <div v-if="filteredProjects.length" class="grid lg:grid-cols-3 gap-6 grid-cols-1" data-aos="fade-right"
+            <div v-if="filteredProjects.length" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 grid-cols-1 md:mx-0 mx-4" data-aos="fade-right"
                 data-aos-duration="700" data-aos-delay="700">
                 <div v-for="project in filteredProjects" :key="project.id"
                     class="relative flex w-full max-w-[26rem] flex-col rounded-xl border border-blue-200 dark:border-cyan-200 text-gray-700 shadow-lg bg-gradient-to-b from-gray-100 via-slate-200 to-gray-300">

@@ -7,9 +7,7 @@ const projects = [
     status: "preview",
     imgPath: "/assets/album/dapurkreatif.png",
     url: "https://shorturl.at/xEJKT",
-    techStack: [techStack.find((tech) => tech.id === 1)].filter(
-      Boolean
-    ),
+    techStack: [techStack.find((tech) => tech.id === 1)].filter(Boolean),
     category: "UI/UX",
   },
   {
@@ -19,9 +17,7 @@ const projects = [
     status: "comming soon",
     imgPath: "/assets/album/polotno.png",
     url: "",
-    techStack: [techStack.find((tech) => tech.id === 1)].filter(
-      Boolean
-    ),
+    techStack: [techStack.find((tech) => tech.id === 1)].filter(Boolean),
     category: "UI/UX",
   },
   {
@@ -80,6 +76,18 @@ const projects = [
       techStack.find((tech) => tech.id === 9),
     ].filter(Boolean),
     category: "FRONTEND",
+  },
+  {
+    id: 7,
+    title: "UI/UX Mobile Apps",
+    name: "Flora Scan",
+    status: "preview",
+    imgPath: "/assets/album/floraScan.png",
+    url: "https://rb.gy/ybhgz8",
+    techStack: [
+      techStack.find((tech) => tech.id === 1),
+    ].filter(Boolean),
+    category: "UI/UX",
   },
   // Tambahkan proyek lainnya
 ];
