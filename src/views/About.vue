@@ -8,7 +8,7 @@
             </span>
             <div class="lg:grid-cols-2 grid gap-16 row-gap-8">
                 <div class="flex flex-col justify-center items-start">
-                    <div class="max-w-xl mb-6">
+                    <div class="max-w-xl mb-6 px-2">
                         <h2 class="font-poppins md:text-4xl text-left sm:leading-none max-w-lg md:mb-6 mb-3 mt-4 text-2xl font-semibold md:font-bold tracking-tight"
                             data-aos="fade-right" data-aos-duration="500"> Hi Dear, <span class="font-courgette font-semibold">I'm Nath</span>
                         </h2>
