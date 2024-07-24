@@ -24,7 +24,7 @@
                         <div id="object-tooltip"
                             class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black md:p-2 p-1 bg-blue-500 rounded-full">
                             <!-- facebook -->
-                            <a :href="social.url">
+                            <a :href="social.url" target="_blank">
                                 <component :is="social.icon" />
                             </a>
                         </div>
