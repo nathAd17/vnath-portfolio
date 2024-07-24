@@ -83,10 +83,8 @@ const projects = [
     name: "Flora Scan",
     status: "preview",
     imgPath: "/assets/album/floraScan.png",
-    url: "https://rb.gy/ybhgz8",
-    techStack: [
-      techStack.find((tech) => tech.id === 1),
-    ].filter(Boolean),
+    url: "https://rb.gy/i8q8ab",
+    techStack: [techStack.find((tech) => tech.id === 1)].filter(Boolean),
     category: "UI/UX",
   },
   // Tambahkan proyek lainnya
