@@ -37,7 +37,7 @@
                             <!-- Iterasi untuk setiap icon di techStack -->
                             <button v-for="(tech, index) in techStack" :key="tech.id"
                                 :style="{ animationDelay: `${index * 1}s` }"
-                                class="profile_item rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500 z-50"
+                                class="profile_item rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"
                                 @mouseover="showTooltip(index)" @mouseleave="hideTooltip">
                                 <span
                                     class="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 transition-all duration-500 rounded-full z-[2] dark:bg-gray-700 bg-gray-100"
@@ -53,7 +53,7 @@
                                 </div>
                             </button>
                             <div
-                                class="w-full bg-transparent h-full flex items-center justify-center p-2 rounded-full hover:scale-95 object-cover transition-all duration-500">
+                                class="w-full bg-transparent h-full flex items-center justify-center p-6 rounded-full hover:scale-95 object-cover transition-all duration-500">
                                 <img class="lg:w-max sm:w-full w-80 h-80 object-cover sm:h-auto border dark:border-cyan-300 border-blue-700 rounded-full"
                                     src="/assets/img/profil.png" alt="" data-aos="zoom-in-up" data-aos-duration="1000"
                                     data-aos-delay="200" loading="lazy" />
@@ -198,39 +198,39 @@ export default {
     @media (max-width: 1280px) {
         @keyframes move {
             0% {
-                transform: rotate(0deg) translateX(260px) rotate(0deg);
+                transform: rotate(0deg) translateX(275px) rotate(0deg);
             }
 
             12.5% {
-                transform: rotate(45deg) translateX(260px) rotate(-45deg);
+                transform: rotate(45deg) translateX(275px) rotate(-45deg);
             }
 
             25% {
-                transform: rotate(90deg) translateX(260px) rotate(-90deg);
+                transform: rotate(90deg) translateX(275px) rotate(-90deg);
             }
 
             37.5% {
-                transform: rotate(135deg) translateX(260px) rotate(-135deg);
+                transform: rotate(135deg) translateX(275px) rotate(-135deg);
             }
 
             50% {
-                transform: rotate(180deg) translateX(260px) rotate(-180deg);
+                transform: rotate(180deg) translateX(275px) rotate(-180deg);
             }
 
             62.5% {
-                transform: rotate(225deg) translateX(260px) rotate(-225deg);
+                transform: rotate(225deg) translateX(275px) rotate(-225deg);
             }
 
             75% {
-                transform: rotate(270deg) translateX(260px) rotate(-270deg);
+                transform: rotate(270deg) translateX(275px) rotate(-270deg);
             }
 
             87.5% {
-                transform: rotate(315deg) translateX(260px) rotate(-315deg);
+                transform: rotate(315deg) translateX(275px) rotate(-315deg);
             }
 
             100% {
-                transform: rotate(360deg) translateX(260px) rotate(-360deg);
+                transform: rotate(360deg) translateX(275px) rotate(-360deg);
             }
         }
 
@@ -281,39 +281,39 @@ export default {
     @media (max-width: 640px) {
         @keyframes move {
             0% {
-                transform: rotate(0deg) translateX(175px) rotate(0deg);
+                transform: rotate(0deg) translateX(180px) rotate(0deg);
             }
 
             12.5% {
-                transform: rotate(45deg) translateX(175px) rotate(-45deg);
+                transform: rotate(45deg) translateX(180px) rotate(-45deg);
             }
 
             25% {
-                transform: rotate(90deg) translateX(175px) rotate(-90deg);
+                transform: rotate(90deg) translateX(180px) rotate(-90deg);
             }
 
             37.5% {
-                transform: rotate(135deg) translateX(175px) rotate(-135deg);
+                transform: rotate(135deg) translateX(180px) rotate(-135deg);
             }
 
             50% {
-                transform: rotate(180deg) translateX(175px) rotate(-180deg);
+                transform: rotate(180deg) translateX(180px) rotate(-180deg);
             }
 
             62.5% {
-                transform: rotate(225deg) translateX(175px) rotate(-225deg);
+                transform: rotate(225deg) translateX(180px) rotate(-225deg);
             }
 
             75% {
-                transform: rotate(270deg) translateX(175px) rotate(-270deg);
+                transform: rotate(270deg) translateX(180px) rotate(-270deg);
             }
 
             87.5% {
-                transform: rotate(315deg) translateX(175px) rotate(-315deg);
+                transform: rotate(315deg) translateX(180px) rotate(-315deg);
             }
 
             100% {
-                transform: rotate(360deg) translateX(175px) rotate(-360deg);
+                transform: rotate(360deg) translateX(180px) rotate(-360deg);
             }
         }
 
