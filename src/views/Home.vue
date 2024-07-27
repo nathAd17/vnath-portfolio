@@ -8,7 +8,7 @@
                         <h2
                             class="font-poppins bg-clip-text bg-gradient-to-r from-blue-600 to-gray-700 dark:from-cyan-500 dark:to-gray-100 lg:text-8xl sm:leading-none sm:text-6xl mb-6 text-4xl font-bold tracking-tight text-transparent transition-colors duration-1000 ease-in-out">
                             Personal Portfolio<br class="md:block hidden" /> by Nath </h2>
-                        <p class="dark:text-gray-200 md:text-lg font-inter text-base font-medium text-gray-800">
+                        <p class="dark:text-gray-200 md:text-xl leading-relaxed font-inter text-base font-medium text-gray-800">
                             I love what I do. From design to coding, I try to give my best in every project.
                             Don't forget to follow my social media
                             and also my Github to see my projects in the web development world. </p>

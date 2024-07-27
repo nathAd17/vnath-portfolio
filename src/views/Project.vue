@@ -10,7 +10,7 @@
                         class="bg-gradient-to-b from-blue-500 from-5% to-gray-50 dark:from-cyan-500 dark:from-5% dark:to-gray-800 font-courgette p-2 ml-1 dark:text-gray-100 text-gray-700 font-semibold transition-colors duration-700 ease-in-out bg-blue-800 rounded-lg">My</span>
                     Project
                 </h1>
-                <p class="md:text-xl dark:text-gray-100 font-inter text-base font-medium text-gray-700"
+                <p class="md:text-xl dark:text-gray-100 leading-relaxed font-inter text-base font-medium text-gray-700"
                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">I'm excited to share some
                     of my best projects in the world of UI/UX design and web development. These projects are the
                     result of my collaboration and dedication to creating great digital experiences.
@@ -26,7 +26,8 @@
                     {{ tab }}
                 </button>
             </div>
-            <div v-if="filteredProjects.length" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 grid-cols-1 md:mx-0 mx-4" data-aos="fade-right"
+            <div v-if="filteredProjects.length"
+                class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 grid-cols-1 md:mx-0 mx-4" data-aos="fade-right"
                 data-aos-duration="700" data-aos-delay="700">
                 <div v-for="project in filteredProjects" :key="project.id"
                     class="relative flex w-full max-w-[26rem] flex-col rounded-xl border border-blue-200 dark:border-cyan-200 text-gray-700 shadow-lg bg-gradient-to-b from-gray-100 via-slate-200 to-gray-300">

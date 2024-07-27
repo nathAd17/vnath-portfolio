@@ -9,7 +9,7 @@
                     Contact <span
                         class="bg-gradient-to-b from-blue-500 from-5% to-gray-50 dark:from-cyan-500 dark:from-5% dark:to-gray-800 p-1 ml-1 font-courgette font-semibold dark:text-gray-100 text-gray-700 transition-colors duration-700 ease-in-out bg-blue-800 rounded-lg">Me</span>
                 </h1>
-                <p class="lg:mb-16 sm:text-xl font-inter dark:text-gray-200 font-medium text-gray-700"
+                <p class="lg:mb-16 sm:text-xl leading-relaxed font-inter dark:text-gray-200 font-medium text-gray-700"
                     data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">Want to chat
                     or ask more about my work? Please send me a message through this form or use one of the
                     list social media

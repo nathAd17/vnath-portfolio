@@ -1,7 +1,8 @@
 <template>
     <section id="about"
         class="bg-gradient-to-b from-blue-500 from-5% to-gray-100 dark:from-cyan-500 dark:from-5% dark:to-gray-800 pt-28 pb-2 md:pb-6 text-slate-700 dark:text-gray-200">
-        <div class="sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-6 pb-6 md:pb-28 px-4 mx-auto text-center">
+        <div
+            class="sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-6 pb-6 md:pb-28 px-4 mx-auto text-center">
             <span class="font-poppins md:text-6xl mb-8 text-4xl font-bold tracking-tight" data-aos="fade-up"
                 data-aos-duration="500">About <span
                     class="bg-gradient-to-b from-blue-500 from-5% to-gray-50 font-courgette font-semibold dark:from-cyan-500 dark:from-5% dark:to-gray-800 p-2 ml-1 dark:text-gray-100 text-gray-700 transition-colors duration-700 ease-in-out bg-blue-800 rounded-lg">Me</span>
@@ -10,15 +11,16 @@
                 <div class="flex flex-col justify-center items-start">
                     <div class="max-w-xl mb-6 px-2">
                         <h2 class="font-poppins md:text-4xl text-left sm:leading-none max-w-lg md:mb-6 mb-3 mt-4 text-2xl font-semibold md:font-bold tracking-tight"
-                            data-aos="fade-right" data-aos-duration="500"> Hi Dear, <span class="font-courgette font-semibold">I'm Nath</span>
+                            data-aos="fade-right" data-aos-duration="500"> Hi Dear, <span
+                                class="font-courgette font-semibold">I'm Nath</span>
                         </h2>
-                        <p class="font-roboto md:text-2xl text-base text-justify" data-aos="fade-right"
+                        <p class="font-roboto md:text-xl font-medium leading-relaxed text-base text-justify" data-aos="fade-right"
                             data-aos-duration="500" data-aos-delay="200"> I am a developer with a deep love for
                             <span class="font-bold">UI/UX, Frontend, and Backend Web Development</span> powerful
                             digital experiences.
                         </p>
-                        <p class="font-roboto md:text-2xl mt-6 text-base text-justify" data-aos="fade-right"
-                            data-aos-duration="500" data-aos-delay="200">
+                        <p class="font-roboto md:text-xl font-medium leading-relaxed mt-6 text-base text-justify"
+                            data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
                             I am someone who is obsessed with innovation and rigor. In my journey as a web
                             developer, I have created projects that
                             combine beautiful design with powerful code. I am committed to continuous learning
