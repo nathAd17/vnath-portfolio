@@ -37,7 +37,7 @@
                     <div class="p-6 mb-20">
                         <div class="flex items-center justify-between mb-3">
                             <h5
-                                class="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-gray-800">
+                                class="block font-sans text-lg md:text-2xl antialiased font-semibold leading-snug tracking-normal text-gray-800">
                                 Project {{ project.title}} - {{project.name}}
                             </h5>
                         </div>

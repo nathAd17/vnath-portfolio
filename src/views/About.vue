@@ -1,7 +1,7 @@
 <template>
     <section id="about"
-        class="bg-gradient-to-b from-blue-500 from-5% to-gray-100 dark:from-cyan-500 dark:from-5% dark:to-gray-800 pt-28 pb-6 text-slate-700 dark:text-gray-200">
-        <div class="sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-6 pb-28 px-4 mx-auto text-center">
+        class="bg-gradient-to-b from-blue-500 from-5% to-gray-100 dark:from-cyan-500 dark:from-5% dark:to-gray-800 pt-28 pb-2 md:pb-6 text-slate-700 dark:text-gray-200">
+        <div class="sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-6 pb-6 md:pb-28 px-4 mx-auto text-center">
             <span class="font-poppins md:text-6xl mb-8 text-4xl font-bold tracking-tight" data-aos="fade-up"
                 data-aos-duration="500">About <span
                     class="bg-gradient-to-b from-blue-500 from-5% to-gray-50 font-courgette font-semibold dark:from-cyan-500 dark:from-5% dark:to-gray-800 p-2 ml-1 dark:text-gray-100 text-gray-700 transition-colors duration-700 ease-in-out bg-blue-800 rounded-lg">Me</span>

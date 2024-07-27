@@ -87,6 +87,34 @@ const projects = [
     techStack: [techStack.find((tech) => tech.id === 1)].filter(Boolean),
     category: "UI/UX",
   },
+  {
+    id: 8,
+    title: "Web Link Tree",
+    name: "Nath Links",
+    status: "preview",
+    imgPath: "/assets/album/nath-links.png",
+    url: "https://nath-links.vercel.app/",
+    techStack: [
+      techStack.find((tech) => tech.id === 2),
+      techStack.find((tech) => tech.id === 5),
+      techStack.find((tech) => tech.id === 9),
+    ].filter(Boolean),
+    category: "FRONTEND",
+  },
+  {
+    id: 9,
+    title: "Web Landing Page Rental Mobil",
+    name: "Nath Rental",
+    status: "preview",
+    imgPath: "/assets/album/nath-rental.png",
+    url: "https://nath-rental.vercel.app/",
+    techStack: [
+      techStack.find((tech) => tech.id === 2),
+      techStack.find((tech) => tech.id === 5),
+      techStack.find((tech) => tech.id === 9),
+    ].filter(Boolean),
+    category: "FRONTEND",
+  },
   // Tambahkan proyek lainnya
 ];
 
