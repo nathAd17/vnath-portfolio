@@ -10,7 +10,7 @@
             <div class="lg:grid-cols-2 grid gap-16 row-gap-8">
                 <div class="flex flex-col justify-center items-start">
                     <div class="max-w-xl mb-6 px-2">
-                        <h2 class="font-poppins md:text-4xl text-left sm:leading-none max-w-lg md:mb-6 mb-3 mt-4 text-2xl font-semibold md:font-bold tracking-tight"
+                        <h2 class="font-inter md:text-4xl text-left sm:leading-none max-w-lg md:mb-6 mb-3 mt-4 text-2xl font-semibold md:font-bold tracking-tight"
                             data-aos="fade-right" data-aos-duration="500"> Hi Dear, <span
                                 class="font-courgette font-semibold">I'm Nath</span>
                         </h2>
@@ -56,7 +56,7 @@
                             </button>
                             <div
                                 class="w-full bg-transparent h-full flex items-center justify-center p-6 rounded-full hover:scale-95 object-cover transition-all duration-500">
-                                <img class="lg:w-max sm:w-full w-80 h-80 object-cover sm:h-auto border dark:border-cyan-300 border-blue-700 rounded-full"
+                                <img class="lg:w-max sm:w-full w-72 h-72 object-cover sm:h-auto border dark:border-cyan-300 border-blue-700 rounded-full"
                                     src="/assets/img/profil.png" alt="" data-aos="zoom-in-up" data-aos-duration="1000"
                                     data-aos-delay="200" loading="lazy" />
                             </div>
@@ -283,39 +283,39 @@ export default {
     @media (max-width: 640px) {
         @keyframes move {
             0% {
-                transform: rotate(0deg) translateX(180px) rotate(0deg);
+                transform: rotate(0deg) translateX(170px) rotate(0deg);
             }
 
             12.5% {
-                transform: rotate(45deg) translateX(180px) rotate(-45deg);
+                transform: rotate(45deg) translateX(170px) rotate(-45deg);
             }
 
             25% {
-                transform: rotate(90deg) translateX(180px) rotate(-90deg);
+                transform: rotate(90deg) translateX(170px) rotate(-90deg);
             }
 
             37.5% {
-                transform: rotate(135deg) translateX(180px) rotate(-135deg);
+                transform: rotate(135deg) translateX(170px) rotate(-135deg);
             }
 
             50% {
-                transform: rotate(180deg) translateX(180px) rotate(-180deg);
+                transform: rotate(180deg) translateX(170px) rotate(-180deg);
             }
 
             62.5% {
-                transform: rotate(225deg) translateX(180px) rotate(-225deg);
+                transform: rotate(225deg) translateX(170px) rotate(-225deg);
             }
 
             75% {
-                transform: rotate(270deg) translateX(180px) rotate(-270deg);
+                transform: rotate(270deg) translateX(170px) rotate(-270deg);
             }
 
             87.5% {
-                transform: rotate(315deg) translateX(180px) rotate(-315deg);
+                transform: rotate(315deg) translateX(170px) rotate(-315deg);
             }
 
             100% {
-                transform: rotate(360deg) translateX(180px) rotate(-360deg);
+                transform: rotate(360deg) translateX(170px) rotate(-360deg);
             }
         }
 

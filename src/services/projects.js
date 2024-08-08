@@ -10,18 +10,18 @@ const projects = [
     techStack: [techStack.find((tech) => tech.id === 1)].filter(Boolean),
     category: "UI/UX",
   },
+  // {
+  //   id: 2,
+  //   title: "UI/UX Mobile Apps",
+  //   name: "Career Search",
+  //   status: "comming soon",
+  //   imgPath: "/assets/album/polotno.png",
+  //   url: "",
+  //   techStack: [techStack.find((tech) => tech.id === 1)].filter(Boolean),
+  //   category: "UI/UX",
+  // },
   {
     id: 2,
-    title: "UI/UX Mobile Apps",
-    name: "Career Search",
-    status: "comming soon",
-    imgPath: "/assets/album/polotno.png",
-    url: "",
-    techStack: [techStack.find((tech) => tech.id === 1)].filter(Boolean),
-    category: "UI/UX",
-  },
-  {
-    id: 3,
     title: "Web Pariwisata",
     name: "Pesona Flobamora",
     status: "comming soon",
@@ -36,7 +36,7 @@ const projects = [
     category: "FULL STACK",
   },
   {
-    id: 4,
+    id: 3,
     title: "Web Portfolio",
     name: "Portfolio Bootstrap",
     status: "preview",
@@ -49,7 +49,7 @@ const projects = [
     category: "FRONTEND",
   },
   {
-    id: 5,
+    id: 4,
     title: "Web Resep Makanan",
     name: "Dapur Kreatif",
     status: "comming soon",
@@ -64,7 +64,7 @@ const projects = [
     category: "FULL STACK",
   },
   {
-    id: 6,
+    id: 5,
     title: "Web Landing Page Sekolah",
     name: "PKBM Yeremia",
     status: "preview",
@@ -78,7 +78,7 @@ const projects = [
     category: "FRONTEND",
   },
   {
-    id: 7,
+    id: 6,
     title: "UI/UX Mobile Apps",
     name: "Flora Scan",
     status: "preview",
@@ -88,7 +88,7 @@ const projects = [
     category: "UI/UX",
   },
   {
-    id: 8,
+    id: 7,
     title: "Web Link Tree",
     name: "Nath Links",
     status: "preview",
@@ -102,7 +102,7 @@ const projects = [
     category: "FRONTEND",
   },
   {
-    id: 9,
+    id: 8,
     title: "Web Landing Page Rental Mobil",
     name: "Nath Rental",
     status: "preview",
