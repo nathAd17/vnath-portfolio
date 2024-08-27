@@ -9,18 +9,14 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
-  <header>
     <Navbar />
-  </header>
   <main>
     <Home />
     <About />
     <Project />
     <Contact />
   </main>
-  <footer>
     <Footer />
-  </footer>
 </template>
 
 <style scoped>
