@@ -31,8 +31,8 @@
                                 <div id="object-tooltip"
                                     class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black p-2 bg-blue-500 rounded-full">
                                     <!-- facebook -->
-                                    <a :href="social.url">
-                                        <component :is="social.icon" />
+                                    <a :href="social.url" aria-label="social link">
+                                        <component :is="social.icon.value" />
                                     </a>
                                 </div>
                             </span>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="md:mb-16 lg:mb-20 mt-6 mb-10">
 
-                        <button href="assets/cv.pdf" target="_blank"
+                        <button aria-label="open-cv"ref="assets/cv.pdf" target="_blank"
                             class="bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 font-poppins hover:transition-colors hover:brightness-110 hover:animate-pulse inline-flex gap-2 px-4 py-2 font-semibold tracking-normal text-gray-900 transition-all duration-1000 border-2 border-gray-200 dark:border-gray-600 ease-in-out transform rounded-lg shadow-lg">
                             Download
                             CV <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
@@ -58,9 +58,9 @@
                 </div>
                 <div class="lg:w-1/2 w-full p-0">
                     <img class="dark:hidden lg:-mt-40 object-cover transition-colors duration-300 ease-in-out"
-                        src="/assets/img/personal-site-animate1.svg" alt="hero">
+                        src="/assets/img/personal-site-animate1.svg" alt="hero" loading="eager">
                     <img class="dark:block lg:-mt-40 hidden object-cover transition-colors duration-300 ease-in-out"
-                        src="/assets/img/personal-site-animate2.svg" alt="hero">
+                        src="/assets/img/personal-site-animate2.svg" alt="hero" loading="eager">
                 </div>
             </div>
             <a href="#about" aria-label="Scroll down"

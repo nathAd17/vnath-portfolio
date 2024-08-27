@@ -50,7 +50,7 @@ onUnmounted(() => {
         <nav class="border-gray-50 relative bg-transparent">
             <div
                 class="backdrop-blur-md fixed top-0 left-0 right-0 z-50 font-poppins flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
-                <a href="#" class="flex items-center relative cursor-pointer overflow-hidden w-auto">
+                <a href="#" aria-label="Home" class="flex items-center relative cursor-pointer overflow-hidden w-auto">
                     <div class="relative px-2 flex items-center group">
                         <span
                             class="whitespace-nowrap dark:text-cyan-300 dark:group-hover:text-gray-700 group-hover:text-gray-200 transition-colors ease-in-out duration-1000 text-2xl font-semibold text-blue-800 relative z-20">
@@ -85,13 +85,13 @@ onUnmounted(() => {
                                 </path>
                             </svg>
                         </span>
-                        <input type="checkbox" class="input" id="dark-toggle" @change="toggleDarkMode"
+                        <input type="checkbox" aria-label="toggle" class="input" id="dark-toggle" @change="toggleDarkMode"
                             :checked="isDarkMode">
                         <span class="slider"></span>
                     </label>
                     <button data-collapse-toggle="mobile-menu" type="button"
                         class="md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-50 dark:hover:bg-gray-700 dark:focus:ring-gray-600 inline-flex items-center p-2 ml-1 text-sm text-gray-600 rounded-lg"
-                        aria-expanded="false" @click="toggleMenu">
+                        aria-expanded="false" aria-label="open-menu" @click="toggleMenu">
                         <span class="sr-only">Open main menu</span>
                         <svg class="dark:text-white w-6 h-6 text-gray-800" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -107,7 +107,7 @@ onUnmounted(() => {
                         class="md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700 flex flex-col p-4 mt-4 font-inter font-semibold border border-gray-100 rounded-lg">
                         <li v-for="item in menu" :key="item.label">
                             <a :href="item.route"
-                                :class="[item.section === currentSection ? 'text-blue-700 dark:text-cyan-400 animate-pulse font-extrabold' : 'hover:text-blue-600 dark:hover:text-cyan-400', 'block py-2 pl-3 pr-4 font-inter font-semibold transition-colors duration-500 ease-in-out rounded-sm cursor-pointer']">
+                                :class="[item.section === currentSection ? 'text-blue-700 dark:text-cyan-400 animate-pulse font-extrabold' : 'hover:text-blue-600 dark:hover:text-cyan-400', 'block py-2 pl-3 pr-4 font-inter font-semibold transition-colors duration-500 ease-in-out rounded-sm cursor-pointer']" :aria-label="item.label">
                                 {{ item.label }}
                             </a>
                         </li>

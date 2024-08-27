@@ -27,7 +27,6 @@
                             and
                             development in this ever-changing
                             world.
-
                         </p>
                     </div>
                 </div>
@@ -37,7 +36,7 @@
                         <div
                             class="profileCard_container relative xl:p-10 lg:p-4 border-2 border-dashed rounded-full border-spacing-4 border-gray-700 dark:border-gray-200/50">
                             <!-- Iterasi untuk setiap icon di techStack -->
-                            <button v-for="(tech, index) in techStack" :key="tech.id"
+                            <button aria-label="tech-stack-tooltip" v-for="(tech, index) in techStack" :key="tech.id"
                                 :style="{ animationDelay: `${index * 1}s` }"
                                 class="profile_item rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500"
                                 @mouseover="showTooltip(index)" @mouseleave="hideTooltip">

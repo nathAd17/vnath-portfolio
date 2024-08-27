@@ -1,3 +1,7 @@
+import {
+  shallowRef
+} from 'vue';
+
 import IconBootstrap from "@/components/icons/IconBootstrap.vue";
 import IconFigma from "@/components/icons/IconFigma.vue";
 import IconJs from "@/components/icons/IconJs.vue";
@@ -12,47 +16,47 @@ const techStack = [
   {
     id: 1,
     label: "Figma",
-    icon: IconFigma,
+    icon: shallowRef(IconFigma),
   },
   {
     id: 2,
     label: "Tailwind CSS",
-    icon: IconTailwind,
+    icon: shallowRef(IconTailwind),
   },
   {
     id: 3,
     label: "Bootstrap",
-    icon: IconBootstrap,
+    icon: shallowRef(IconBootstrap),
   },
   {
     id: 4,
     label: "JavaScript",
-    icon: IconJs,
+    icon: shallowRef(IconJs),
   },
   {
     id: 5,
     label: "Vue JS",
-    icon: IconVue,
+    icon: shallowRef(IconVue),
   },
   {
     id: 6,
     label: "PHP",
-    icon: IconPhp,
+    icon: shallowRef(IconPhp),
   },
   {
     id: 7,
     label: "Laravel",
-    icon: IconLaravel,
+    icon: shallowRef(IconLaravel),
   },
   {
     id: 8,
     label: "MySql",
-    icon: IconMysql,
+    icon: shallowRef(IconMysql),
   },
   {
     id: 9,
     label: "Vite",
-    icon: IconVite,
+    icon: shallowRef(IconVite),
   },
 ];
 

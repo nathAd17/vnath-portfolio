@@ -45,7 +45,7 @@
                                 class="block p-2.5 w-full text-base text-gray-700 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-300 dark:focus:border-cyan-300"
                                 placeholder="Your message..." v-model="formData.message" required></textarea>
                         </div>
-                        <button type="submit"
+                        <button aria-label="submit-form"type="submit"
                             class="bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 font-poppins hover:transition-colors hover:brightness-110 hover:animate-pulse inline-flex p-2 font-semibold tracking-normal text-gray-900 border-2 border-gray-200 dark:border-gray-600 transition-all duration-1000 ease-in-out transform rounded-md shadow-lg"
                             data-aos="fade-up" data-aos-duration="500">Send Message</button>
                     </form>
@@ -75,7 +75,7 @@
                             <p
                                 :class="{ 'text-gray-800 dark:text-gray-100 text-xl font-semibold': isSuccess, 'text-red-500 text-xl font-semibold': !isSuccess }">
                                 {{ message }}</p>
-                            <button @click="message = ''"
+                            <button aria-label="close-message" @click="message = ''"
                                 class="mt-4 bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 font-poppins hover:transition-colors hover:brightness-110 hover:animate-pulse inline-flex p-2 font-semibold tracking-normal text-gray-900 border-2 border-gray-50 dark:border-gray-800 transition-all duration-1000 ease-in-out transform rounded-md shadow-lg">Close</button>
                         </div>
                     </div>

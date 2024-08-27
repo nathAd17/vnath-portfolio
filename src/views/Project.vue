@@ -22,7 +22,7 @@
                 class="mb-4 flex items-center justify-center font-inter md:gap-3 gap-1 text-sm md:text-lg font-medium md:font-semibold">
                 <button v-for="tab in tabs" :key="tab" @click="activeTab = tab" :class="{
                     'animate-pulse bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 border border-blue-600 dark:border-cyan-200': activeTab === tab,
-                    'bg-gray-200 text-gray-800': activeTab !== tab}" class="md:px-4 px-2 py-2 rounded-lg mr-2">
+                    'bg-gray-200 text-gray-800': activeTab !== tab}" class="md:px-4 px-2 py-2 rounded-lg mr-2" aria-label="tab">
                     {{ tab }}
                 </button>
             </div>
@@ -33,14 +33,14 @@
                     class="relative flex w-full max-w-[26rem] flex-col rounded-xl border border-blue-200 dark:border-cyan-200 text-gray-700 shadow-lg bg-gradient-to-b from-gray-100 via-slate-200 to-gray-300">
                     <div
                         class="relative md:mx-4 mx-1 mt-1 md:mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
-                        <img :src="project.imgPath" loading="lazy" />
+                        <img :src="project.imgPath" loading="lazy" :alt="project.name" />
                     </div>
                     <div class="p-6 mb-20">
                         <div class="flex items-center justify-between mb-3">
-                            <h5
+                            <h1
                                 class="block font-sans text-lg md:text-2xl antialiased font-semibold leading-snug tracking-normal text-gray-800">
                                 Project {{ project.title}} - {{project.name}}
-                            </h5>
+                            </h1>
                         </div>
                         <div class="flex flex-wrap items-center gap-2 mt-2">
                             <div v-for="(tech, index) in project.techStack" :key="index"
@@ -68,7 +68,8 @@
                     </div>
                     <div class="md:p-6 p-3 pt-3 absolute bottom-0 mt-4 left-0 right-0">
                         <button v-if="canVisitProject(project)" @click="visitProject(project)"
-                            class="flex w-full select-none rounded-lg bg-gray-800 py-3.5 lg:px-7 px-2 hover:animate-pulse text-center justify-center gap-2 items-center font-inter text-base md:text-lg font-bold capitalize text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 border-2 border-gray-200 dark:border-gray-600">
+                            class="flex w-full select-none rounded-lg bg-gray-800 py-3.5 lg:px-7 px-2 hover:animate-pulse text-center justify-center gap-2 items-center font-inter text-base md:text-lg font-bold capitalize text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 border-2 border-gray-200 dark:border-gray-600"
+                            aria-label="visit-project">
                             {{project.status}}
                             <span>
                                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
@@ -81,7 +82,8 @@
                             </span>
                         </button>
                         <button v-else
-                            class="flex w-full select-none rounded-lg bg-gray-800 py-3.5 lg:px-7 px-2 hover:animate-pulse text-center justify-center gap-2 items-center font-inter text-base md:text-lg font-bold capitalize text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 border-2 border-gray-200 dark:border-gray-600">{{
+                            class="flex w-full select-none rounded-lg bg-gray-800 py-3.5 lg:px-7 px-2 hover:animate-pulse text-center justify-center gap-2 items-center font-inter text-base md:text-lg font-bold capitalize text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 border-2 border-gray-200 dark:border-gray-600"
+                            aria-label="not-visit-project">{{
                             project.status }}
                             <span>
                                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
