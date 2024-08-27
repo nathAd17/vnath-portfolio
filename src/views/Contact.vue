@@ -18,9 +18,9 @@
             <div class="md:flex-nowrap flex flex-row flex-wrap">
                 <div class="w-full">
                     <img src="/assets/img/contact1.svg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1000"
-                        alt="ilustrasi-kontak" class="dark:block hidden">
+                        alt="ilustrasi-kontak" loading="eager" class="dark:block hidden w-full h-full">
                     <img src="/assets/img/contact2.svg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1000"
-                        alt="ilustrasi-kontak" class="dark:hidden">
+                        alt="ilustrasi-kontak" loading="eager" class="dark:hidden w-full h-full">
                 </div>
                 <div class="w-full">
                     <form @submit.prevent="handleSubmit" id="myForm" class="font-inter space-y-8">

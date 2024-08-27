@@ -57,9 +57,9 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2 w-full p-0">
-                    <img class="dark:hidden lg:-mt-40 object-cover transition-colors duration-300 ease-in-out"
+                    <img class="dark:hidden lg:-mt-40 w-full h-full object-cover transition-colors duration-300 ease-in-out"
                         src="/assets/img/personal-site-animate1.svg" alt="hero" loading="eager">
-                    <img class="dark:block lg:-mt-40 hidden object-cover transition-colors duration-300 ease-in-out"
+                    <img class="dark:block lg:-mt-40 w-full h-full hidden object-cover transition-colors duration-300 ease-in-out"
                         src="/assets/img/personal-site-animate2.svg" alt="hero" loading="eager">
                 </div>
             </div>
