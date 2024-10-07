@@ -115,7 +115,22 @@ const projects = [
     ].filter(Boolean),
     category: "FRONTEND",
   },
-  // Tambahkan proyek lainnya
+  {
+    id: 9,
+    title: "Web Pariwisata",
+    name: "Pesona Flobamora - p2",
+    status: "comming soon",
+    imgPath: "/assets/album/pesona-flobamora_2.png",
+    url: "",
+    techStack: [
+      techStack.find((tech) => tech.id === 2),
+      techStack.find((tech) => tech.id === 4),
+      techStack.find((tech) => tech.id === 7),
+      techStack.find((tech) => tech.id === 8),
+      techStack.find((tech) => tech.id === 10),
+    ].filter(Boolean),
+    category: "FULL STACK",
+  },
 ];
 
 export default projects;

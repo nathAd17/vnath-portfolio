@@ -11,6 +11,7 @@ import IconPhp from "@/components/icons/IconPhp.vue";
 import IconTailwind from "@/components/icons/IconTailwind.vue";
 import IconVue from "@/components/icons/IconVue.vue";
 import IconVite from "@/components/icons/IconVite.vue";
+import IconFilament from '@/components/icons/IconFilament.vue';
 
 const techStack = [
   {
@@ -57,6 +58,11 @@ const techStack = [
     id: 9,
     label: "Vite",
     icon: shallowRef(IconVite),
+  },
+  {
+    id: 10,
+    label: "Filament",
+    icon: shallowRef(IconFilament),
   },
 ];
 

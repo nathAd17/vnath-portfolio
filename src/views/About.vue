@@ -2,24 +2,24 @@
     <section id="about"
         class="bg-gradient-to-b from-blue-500 from-5% to-gray-100 dark:from-cyan-500 dark:from-5% dark:to-gray-800 pt-28 pb-2 md:pb-6 text-slate-700 dark:text-gray-200">
         <div
-            class="sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-6 pb-6 md:pb-28 px-4 mx-auto text-center">
-            <span class="font-poppins md:text-6xl mb-8 text-4xl font-bold tracking-tight" data-aos="fade-up"
+            class="px-4 pb-6 mx-auto text-center sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-6 md:pb-28">
+            <span class="mb-8 text-4xl font-bold tracking-tight font-poppins md:text-6xl" data-aos="fade-up"
                 data-aos-duration="500">About <span
                     class="bg-gradient-to-b from-blue-500 from-5% to-gray-50 font-courgette font-semibold dark:from-cyan-500 dark:from-5% dark:to-gray-800 p-2 ml-1 dark:text-gray-100 text-gray-700 transition-colors duration-700 ease-in-out bg-blue-800 rounded-lg">Me</span>
             </span>
-            <div class="lg:grid-cols-2 grid gap-16 row-gap-8">
-                <div class="flex flex-col justify-center items-start">
-                    <div class="max-w-xl mb-6 px-2">
-                        <h2 class="font-inter md:text-4xl text-left sm:leading-none max-w-lg md:mb-6 mb-3 mt-4 text-2xl font-semibold md:font-bold tracking-tight"
+            <div class="grid gap-16 row-gap-8 lg:grid-cols-2">
+                <div class="flex flex-col items-start justify-center">
+                    <div class="max-w-xl px-2 mb-6">
+                        <h2 class="max-w-lg mt-4 mb-3 text-2xl font-semibold tracking-tight text-left font-inter md:text-4xl sm:leading-none md:mb-6 md:font-bold"
                             data-aos="fade-right" data-aos-duration="500"> Hi Dear, <span
-                                class="font-courgette font-semibold">I'm Nath</span>
+                                class="font-semibold font-courgette">I'm Nath</span>
                         </h2>
-                        <p class="font-roboto md:text-xl font-medium leading-relaxed text-base text-justify" data-aos="fade-right"
+                        <p class="text-base font-medium leading-relaxed text-justify font-roboto md:text-xl" data-aos="fade-right"
                             data-aos-duration="500" data-aos-delay="200"> I am a developer with a deep love for
                             <span class="font-bold">UI/UX, Frontend, and Backend Web Development</span> powerful
                             digital experiences.
                         </p>
-                        <p class="font-roboto md:text-xl font-medium leading-relaxed mt-6 text-base text-justify"
+                        <p class="mt-6 text-base font-medium leading-relaxed text-justify font-roboto md:text-xl"
                             data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
                             I am someone who is obsessed with innovation and rigor. In my journey as a web
                             developer, I have created projects that
@@ -30,11 +30,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="lg:w-full relative mx-auto mt-12" data-aos="zoom-in-up" data-aos-duration="1000"
+                <div class="relative mx-auto mt-12 lg:w-full" data-aos="zoom-in-up" data-aos-duration="1000"
                     data-aos-delay="200">
-                    <div class="relative h-full w-full flex items-center justify-center">
+                    <div class="relative flex items-center justify-center w-full h-full">
                         <div
-                            class="profileCard_container relative xl:p-10 lg:p-4 border-2 border-dashed rounded-full border-spacing-4 border-gray-700 dark:border-gray-200/50">
+                            class="relative border-2 border-gray-700 border-dashed rounded-full profileCard_container xl:p-10 lg:p-4 border-spacing-4 dark:border-gray-200/50">
                             <!-- Iterasi untuk setiap icon di techStack -->
                             <button aria-label="tech-stack-tooltip" v-for="(tech, index) in techStack" :key="tech.id"
                                 :style="{ animationDelay: `${index * 1}s` }"
@@ -42,20 +42,20 @@
                                 @mouseover="showTooltip(index)" @mouseleave="hideTooltip">
                                 <span
                                     class="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 transition-all duration-500 rounded-full z-[2] dark:bg-gray-700 bg-gray-100"
-                                    v-if="tech.id != 9">
+                                    v-if="tech.id < 9">
                                     <component :is="tech.icon" />
                                 </span>
                                 <div v-if="tooltipIndex === index" class="tooltip">
                                     {{ tech.label }}
-                                    <svg class="top-full absolute left-0 w-full h-2 text-gray-100" x="0px" y="0px"
+                                    <svg class="absolute left-0 w-full h-2 text-gray-100 top-full" x="0px" y="0px"
                                         viewBox="0 0 255 255" xml:space="preserve">
                                         <polygon class="fill-current" points="0,0 127.5,127.5 255,0" />
                                     </svg>
                                 </div>
                             </button>
                             <div
-                                class="w-full bg-transparent h-full flex items-center justify-center p-6 rounded-full hover:scale-95 object-cover transition-all duration-500">
-                                <img class="lg:w-max sm:w-full w-72 h-72 object-cover sm:h-auto border dark:border-cyan-300 border-blue-700 rounded-full"
+                                class="flex items-center justify-center object-cover w-full h-full p-6 transition-all duration-500 bg-transparent rounded-full hover:scale-95">
+                                <img class="object-cover border border-blue-700 rounded-full lg:w-max sm:w-full w-72 h-72 sm:h-auto dark:border-cyan-300"
                                     src="/assets/img/profil.png" alt="" data-aos="zoom-in-up" data-aos-duration="1000"
                                     data-aos-delay="200" loading="lazy" />
                             </div>
