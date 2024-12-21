@@ -5,18 +5,21 @@ import About from '@/views/About.vue'
 import Project from '@/views/Project.vue'
 import Contact from '@/views/Contact.vue'
 import Footer from '@/components/Footer.vue'
-
+import { Analytics } from '@vercel/analytics/vue';
+import { SpeedInsights } from "@vercel/speed-insights/vue"
 </script>
 
 <template>
-    <Navbar />
+  <Analytics />
+  <SpeedInsights />
+  <Navbar />
   <main>
     <Home />
     <About />
     <Project />
     <Contact />
   </main>
-    <Footer />
+  <Footer />
 </template>
 
 <style scoped>

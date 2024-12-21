@@ -10,8 +10,11 @@
     "test:unit": "vitest"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
     "aos": "^2.3.4",
-    "vue": "^3.4.29"
+    "vue": "^3.4.29",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
